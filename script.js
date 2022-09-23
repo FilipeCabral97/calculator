@@ -31,6 +31,10 @@ const operate = (op, a, b) => {
         display.textContent = firstNum;
         break;
       case "/":
+        if (b === 0) {
+          display.textContent = "(－‸ლ)";
+          break;
+        }
         firstNum = divide(a, b);
         display.textContent = firstNum;
         break;
@@ -39,7 +43,6 @@ const operate = (op, a, b) => {
     }
   } else if (opCounter > 1) {
     opCounter = 0;
-
     switch (op) {
       case "+":
         firstNum = sum(a, b);
@@ -54,6 +57,10 @@ const operate = (op, a, b) => {
         display.textContent = firstNum;
         break;
       case "/":
+        if (b === 0) {
+          display.textContent = "(－‸ლ)";
+          break;
+        }
         firstNum = divide(a, b);
         display.textContent = firstNum;
         break;
