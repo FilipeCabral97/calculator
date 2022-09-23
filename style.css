@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: rgb(252, 220, 255);
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #35004e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px 15px; */
+  border-radius: 20px;
+
+  background: #5c0086;
+  box-shadow: -1px 1px 40px 10px rgb(20, 0, 29);
+}
+
+.display-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px 4px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 10px 5px 0px 5px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 5px;
+  border-radius: 20px;
+  background: rgb(127, 0, 185);
+  background: linear-gradient(
+    90deg,
+    rgba(127, 0, 185, 1) 0%,
+    rgba(134, 0, 148, 1) 100%
+  );
+
+  box-shadow: 0 -5px 15px -5px rgb(26, 0, 37);
+}
+
+#display {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------- BUTTONS --------- */
+
+button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.digit {
+  background-color: rgba(0, 0, 0, 0);
+}
+.digit:hover {
+  background-color: rgba(255, 255, 255, 0.377);
+}
+
+.operator {
+  background-color: rgba(156, 99, 182, 0.418);
+}
+.operator:hover {
+  background-color: rgba(156, 99, 182, 0.979);
+}
+
+#equal {
+  background-color: rgba(209, 137, 43, 0.671);
+}
+#equal:hover {
+  background-color: rgb(206, 117, 0);
+}
+
+#clear {
+  background-color: rgba(218, 0, 65, 0.726);
+  box-shadow: 0 0 5px #333;
+}
+#clear:hover {
+  background-color: rgb(218, 0, 65);
+}

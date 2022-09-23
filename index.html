@@ -7,37 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Odin Calculator</title>
 </head>
 
-
-<!-- TODO: Styling -->
-
 <body>
-    <button id="clear">C</button>
-    <span id="display">0</span>
-    <br>
-    <br>
-    <button class="digit">7</button>
-    <button class="digit">8</button>
-    <button class="digit">9</button>
-    <br>
-    <button class="digit">4</button>
-    <button class="digit">5</button>
-    <button class="digit">6</button>
-    <br>
-    <button class="digit">1</button>
-    <button class="digit">2</button>
-    <button class="digit">3</button>
-    <br>
-    <button class="digit">0</button>
-    <button class="digit">.</button>
-    <button id="equal">=</button>
-    <br>
-    <button class="operator">+</button>
-    <button class="operator">-</button>
-    <button class="operator">*</button>
-    <button class="operator">/</button>
+    <div class="container">
+        <div class="display-out-container">
+            <div class="display-container">
+                <button id="clear">C</button>
+                <p id="display">0</p>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <div class="row">
+                <button class="digit">7</button>
+                <button class="digit">8</button>
+                <button class="digit">9</button>
+                <button class="operator">/</button>
+            </div>
+            <div class="row">
+                <button class="digit">4</button>
+                <button class="digit">5</button>
+                <button class="digit">6</button>
+                <button class="operator">*</button>
+            </div>
+            <div class="row">
+                <button class="digit">1</button>
+                <button class="digit">2</button>
+                <button class="digit">3</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="row">
+                <button class="digit">.</button>
+                <button class="digit">0</button>
+                <button id="equal">=</button>
+                <button class="operator">+</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
