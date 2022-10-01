@@ -1,5 +1,6 @@
-# Odin-Calculator
-Calculator for The Odin Project - Foundations Course
+# The Odin Project: Calculator
+> Simple calculator to practice JavaScript and CSS  
+https://www.theodinproject.com/lessons/foundations-calculator
 
 [Live Demo](https://filipecabral97.github.io/Odin-Calculator/)
 
